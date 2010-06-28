@@ -1,0 +1,97 @@
+/*-----------------------------------------------------------------------------------
+  Global Reset v0.3 (based on http://meyerweb.com/eric/tools/css/reset/ - v1.0 | 20080212)
+-----------------------------------------------------------------------------------*/
+  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+  body { line-height: 1; }
+  ol, ul { list-style: none; }
+  :focus { outline: 0; }
+  table { border-collapse: collapse; border-spacing: 0; }
+
+
+/*---------------------------
+  Elements
+---------------------------*/
+  body { background-color: #e7e7e7; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; padding: 20px; }
+  h1 { color: red; font-size: 96px; }
+
+/*-------------------------------------------
+  Global
+-------------------------------------------*/
+	.left { float: left; }
+	.block_left { float: left; margin: 0 10px 10px 0; }
+	.right { float: right; }
+	.block_right { float: right; margin: 0 0 10px 10px; }
+	.center { text-align: center; }
+	.clear { clear: both; }
+	
+/*  #table { background: -moz-radial-gradient(#517c15, #364c0a); border: 12px solid #542c13; -moz-border-radius: 75px; height: 400px; margin: 100px auto 0 auto; position: relative; width: 800px; }
+  #table p { color: rgba(255, 255, 255, 0.15); font-size: 36px; left: 330px; position: absolute; top: 180px; z-index: 1; }
+  */
+  
+  #table { overflow: hidden; padding: 20px; }
+  
+/*  .card { background-color: #fff; -moz-border-radius: .5em; -webkit-border-radius: .5em; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); font-family: monospace; float: left; font-size: 2em; height: 14em; margin: 0 15px 15px 0; position: relative; width: 10em; z-index: 2; }*/
+	.card { background-color: #fff; -moz-border-radius: 10px; -webkit-border-radius: 5px; -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); float: left; height: 280px; margin: 0 15px 15px 0; position: relative; width: 200px; z-index: 2; }
+	
+	.card.heart, .card.diamond { color: red; }
+	
+  /* Number/suit in corners */
+	.card .corner { line-height: 1; overflow: hidden; position: absolute; text-align: center; /*width: 12px;*/ }
+	.card .corner span { display: block; font-size: 24px; font-weight: bold; }
+	.card .corner .number { font-size: 32px; height: 32px; line-height: 32px; }
+	.card.ten .corner .number { font-size: 24px; letter-spacing: -1.8px; }
+	.card .corner.top { left: 8px; top: 12px; }
+	.card .corner.bottom { bottom: 12px; right: 8px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	
+	.card .suit { font-size: 64px; font-weight: bold; height: 60px; line-height: 60px; overflow: hidden; position: absolute; text-align: center; width: 50px; }
+	.card .top_center { left: 76px; top: 24px; }
+	.card .top_left { left: 30px; top: 24px; }
+	.card .top_right { right: 30px; top: 24px; }
+  /* stopped here - */
+	.card .middle_center { left: 76px; top: 110px; }
+	.card .middle_top { left: 76px; top: 70px; }
+	.card .middle_bottom { bottom: 70px; left: 76px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	.card .middle_left { left: 30px; top: 110px; }
+	.card .middle_right { right: 30px; top: 110px; }
+	.card .middle_top_center { left: 76px; top: 60px; }
+	.card .middle_top_left { left: 30px; top: 80px; }
+	.card .middle_top_right { right: 30px; top: 80px; }
+	.card .middle_bottom_left { bottom: 80px; left: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	.card .middle_bottom_right { bottom: 80px; right: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	.card .middle_bottom_center { bottom: 60px; left: 76px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	
+	.card .bottom_center { bottom: 24px; left: 76px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	.card .bottom_left { bottom: 24px; left: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	.card .bottom_right { bottom: 24px; right: 30px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+	
+/*  .card .corner { line-height: 1.5em; position: absolute; text-align: center;  }
+  .card .corner span { display: block; font-size: 1.6em; }
+  .card .corner .number { font-size: 2em; }
+  .card.ten .corner .number { letter-spacing: -0.25em; }
+  .card .corner.top { left: 5px; top: 5px; }
+  .card .corner.bottom { bottom: 5px; right: 5px; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  
+  .card .suit { font-size: 3.2em; position: absolute;  }
+  .card .top_center { left: 1.2em; top: 0.3em; }
+  .card .top_mid { left: 1.2em; top: 0.8em; }
+  .card .top_left { left: 0.5em; top: 0.3em; }
+  .card .top_right { right: 0.5em; top: 0.3em; }
+  
+  .card .center { left: 1.2em; top: 1.7em; }
+  .card .center_top { left: 1.2em; top: 1.05em; }
+  .card .center_bottom { bottom: 1.05em; left: 1.2em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  .card .center_left { left: 0.5em; top: 1.7em; }
+  .card .center_right { right: 0.5em; top: 1.7em; }
+  .card .center_top_left { left: 0.5em; top: 1.3em; }
+  .card .center_top_right { right: 0.5em; top: 1.3em; }
+  .card .center_bottom_left { bottom: 1.3em; left: 0.5em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  .card .center_bottom_right { bottom: 1.3em; right: 0.5em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  
+  .card .bottom_mid { bottom: 0.8em; left: 1.2em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  .card .bottom_center { bottom: 0.3em; left: 1.2em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  .card .bottom_left { bottom: 0.3em; left: 0.5em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }
+  .card .bottom_right { bottom: 0.3em; right: 0.5em; -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); }*/
+	
+	
+	.player { background-color: #fff; -moz-border-radius: 5px; -moz-box-shadow: 0 0 5px #000; color: #fff; font-size: 12px; font-weight: bold; height: 75px; left: 200px; position: absolute; top: -70px; width: 75px; }
+	.player img { -moz-border-radius: 5px; }
