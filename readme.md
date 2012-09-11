@@ -8,3 +8,6 @@ A deck of cards created in 100% CSS3. There are no images, so cards can scale to
 - Add animations to shuffle, flip, rotate, and deal the cards
 - Cards will animate from the deck to the middle of the table, flipping and turning as they move
 - Rename the project, just recently found out about a physical deck of cards called "Helveticards"
+
+
+### Licensed under the MIT license
